@@ -24,6 +24,6 @@ public class ScoreShower : MonoBehaviour
 
     private void ShowScore()
     {
-     finalScore.text= "Your Score is: "+gameSession.GetScore().ToString();
+     //finalScore.text= "Your Score is: "+gameSession.GetScore().ToString();
     }
 }

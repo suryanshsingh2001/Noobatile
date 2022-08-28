@@ -38,7 +38,7 @@ public class LevelExit : MonoBehaviour
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
             //Go to Game Over Menu
-            nextSceneIndex = 0; 
+            nextSceneIndex = 3; 
             
         }
      

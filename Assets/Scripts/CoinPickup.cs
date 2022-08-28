@@ -14,6 +14,8 @@ public class CoinPickup : MonoBehaviour
         if (collision.tag == "Player" && !coinWasCollected)
         {
             coinWasCollected = true;
+            //Change this for to scorekeeper 
+            FindObjectOfType<ScoreKeeper>().ModifyScore(pointForCoinPickup);
             FindObjectOfType<GameSession>().addToScore(pointForCoinPickup);
             AudioSource.PlayClipAtPoint(coinAudio, Camera.main.transform.position);
             gameObject.SetActive(false);

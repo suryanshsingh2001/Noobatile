@@ -10,9 +10,10 @@ public class MainMenuUI : MonoBehaviour
 
     public void LoadGame()
     {
-        
-        SceneManager.LoadScene("Level 1");
 
+        SceneManager.LoadScene("Level 1");
+        FindObjectOfType<ScoreKeeper>().ResetShowScore();
+        FindObjectOfType<GameSession>().ResetGameSession();
     }
     public void LoadMainMenu()
     {

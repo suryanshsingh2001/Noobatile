@@ -18,7 +18,7 @@ public class GameSession : MonoBehaviour
     [Header("Scene")]
     [SerializeField] float loadDelay=2f;
 
-    int score = 0;
+    [SerializeField] int Gamescore = 0;
 
     void Awake()
     {
@@ -35,13 +35,14 @@ public class GameSession : MonoBehaviour
     void Start()
     {
         livesText.text = "Lives: "+playerLives.ToString();
-        scoreText.text = "Score: "+score.ToString();
+        //Remove this line and transfer to scorekeeper
+        scoreText.text = "Score: "+Gamescore.ToString();
     }
-
+    //Transfer to ScoreKeeper
     public void addToScore(int PointsToAdd)
     {
-        score += PointsToAdd;
-        scoreText.text = "Score: "+score.ToString();
+        Gamescore += PointsToAdd;
+        scoreText.text = "Score: "+Gamescore.ToString();
     }
 
     public void ProcessPlayerDeath()
@@ -54,11 +55,12 @@ public class GameSession : MonoBehaviour
         {
             //Load to Game Over Screen
             Invoke("ResetGameSession", loadDelay);
+            SceneManager.LoadScene(3);
         }
     }
-    public int  GetScore()
+    public void ResetGameScore()
     {
-        return score;
+        Gamescore=0;
     }
 
     void TakeLife()
@@ -72,7 +74,8 @@ public class GameSession : MonoBehaviour
     public void ResetGameSession()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(0);
+        FindObjectOfType<ScoreKeeper>().ResetShowScore();
+        
         Destroy(gameObject);
     }     
 }
