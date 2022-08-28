@@ -8,13 +8,12 @@ public class ScoreShower : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI finalScore;
 
+    ScoreKeeper scoreKeeper;
 
-    GameSession gameSession;
-    ScenePersist scenePersist;
+
     private void Awake()
     {
-        gameSession = FindObjectOfType<GameSession>();
-        scenePersist = FindObjectOfType<ScenePersist>();
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
 
     }
     private void Start()
@@ -24,6 +23,6 @@ public class ScoreShower : MonoBehaviour
 
     private void ShowScore()
     {
-     //finalScore.text= "Your Score is: "+gameSession.GetScore().ToString();
+     finalScore.text= "Your Score is: "+scoreKeeper.GetScore().ToString();
     }
 }
