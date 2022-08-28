@@ -23,6 +23,6 @@ public class ScoreShower : MonoBehaviour
 
     private void ShowScore()
     {
-     finalScore.text= "Your Score is: "+scoreKeeper.GetScore().ToString();
+     finalScore.text= "YOUR SCORE IS: "+scoreKeeper.GetScore().ToString();
     }
 }

@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
   finishSound: {fileID: 8300000, guid: 7b0c6d7ff14291b48a110d940b3c56c8, type: 3}
+  finishFXVolume: 1
 --- !u!61 &6687182734242354901
 BoxCollider2D:
   m_ObjectHideFlags: 0

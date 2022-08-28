@@ -7788,7 +7788,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1267807306
 MonoBehaviour:
@@ -7803,11 +7803,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSounds:
-  - {fileID: 8300000, guid: 4872ea1759fc78e4c948554c90db119e, type: 3}
-  - {fileID: 8300000, guid: 95a6fd14d3f69a948b577f4af606c199, type: 3}
-  - {fileID: 8300000, guid: 8632226492c0ae044973124676824c02, type: 3}
-  - {fileID: 8300000, guid: cfe6991548f1b1a4eb6a61b6c6341c17, type: 3}
-  - {fileID: 8300000, guid: 88bd7e8cf5e58f94dbbaa6d5767cfa88, type: 3}
+  - {fileID: 8300000, guid: e72b3eef45b31d846a5612a1815ee52d, type: 3}
+  - {fileID: 8300000, guid: 5e3946a0dcc0cc54995576b41f96a940, type: 3}
+  - {fileID: 8300000, guid: cd767e19238207943b55a0970af2ad6f, type: 3}
+  - {fileID: 8300000, guid: 8d129b98469f1b64ba66cca33d42ccc8, type: 3}
+  - {fileID: 8300000, guid: 50bc44f53fb657f4383592603d46290b, type: 3}
 --- !u!82 &1267807307
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12923,7 +12923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7011616390479309191, guid: b3dbcee1c5bd94f49a61fcbad44a6cc5, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7011616390479309191, guid: b3dbcee1c5bd94f49a61fcbad44a6cc5, type: 3}
       propertyPath: m_LocalPosition.x

@@ -131,11 +131,11 @@ MonoBehaviour:
   bullet: {fileID: 1300152369282278595, guid: 12ed6e1489cca804da90e38168aa73a7, type: 3}
   gun: {fileID: 2331663336530579883}
   deathSound: {fileID: 8300000, guid: a108926cf61536047b7fdb460d224c63, type: 3}
-  deathFXVolume: 0.75
+  deathFXVolume: 1
   jumpSound: {fileID: 8300000, guid: 6dd0d365defeba44eb73395859e25a72, type: 3}
-  jumpFXVolume: 0.75
+  jumpFXVolume: 1
   fireSound: {fileID: 8300000, guid: 68de9517d653db544ba5aa4e29b6fdac, type: 3}
-  fireFXVolume: 0.75
+  fireFXVolume: 1
 --- !u!70 &3294416875648857246
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
