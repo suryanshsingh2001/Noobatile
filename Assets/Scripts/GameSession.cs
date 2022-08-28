@@ -7,16 +7,21 @@ using TMPro;
 
 public class GameSession : MonoBehaviour
 {
+    [Header("Score and Lives")]
     [SerializeField] int playerLives = 3;
-    [SerializeField] int score = 0;
+     
 
-
+    [Header("UI")]
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
 
+    [Header("Scene")]
+    [SerializeField] float loadDelay=2f;
+
+    int score = 0;
+
     void Awake()
     {
-
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
         if (numGameSessions > 1)
         {
@@ -29,41 +34,47 @@ public class GameSession : MonoBehaviour
     }
     void Start()
     {
-        livesText.text = playerLives.ToString();
-        scoreText.text = score.ToString();
+        livesText.text = "Lives: "+playerLives.ToString();
+        scoreText.text = "Score: "+score.ToString();
     }
+
     public void addToScore(int PointsToAdd)
     {
         score += PointsToAdd;
-        scoreText.text = score.ToString();
+        scoreText.text = "Score: "+score.ToString();
     }
 
     public void ProcessPlayerDeath()
     {
         if (playerLives > 1)
         {
-            TakeLife();
+            Invoke("TakeLife", loadDelay);
         }
         else
         {
-            ResetGameSession();
+            //Load to Game Over Screen
+            Invoke("ResetGameSession", loadDelay);
         }
     }
+    public int  GetScore()
+    {
+        return score;
+    }
 
-    
     void TakeLife()
     {
         playerLives--;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
-        livesText.text = playerLives.ToString();
+        livesText.text = "Lives: "+playerLives.ToString();
     }
     
-    void ResetGameSession()
+    public void ResetGameSession()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
         Destroy(gameObject);
-    }
-
+    }     
 }
+
+
