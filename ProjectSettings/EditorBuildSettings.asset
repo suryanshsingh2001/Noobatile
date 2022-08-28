@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 13f975a93b2752647805ed54c6c47558
+    guid: eb06d9d415ebec141910f0da6ffebb25
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 1bbe0515263565c45b350478208ab027
@@ -16,12 +16,6 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
-    guid: 73b9f15b611fc2541a5bfcb01ddb1407
-  - enabled: 0
-    path: Assets/Scenes/Extra2.unity
-    guid: 526920ec8e4f6964782cdd8c2830cb96
-  - enabled: 0
-    path: Assets/Scenes/Extra1.unity
-    guid: 3703ad2ba2b016e49ac89d155b0f96ac
+    guid: 13f975a93b2752647805ed54c6c47558
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 06cfc052b7e17114381332cd2a3b7d21, type: 2}

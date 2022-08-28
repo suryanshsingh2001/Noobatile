@@ -5,13 +5,13 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     [SerializeField] float bulletSpeed=20f;
+   
     Rigidbody2D rigidbody;
     PlayerMovement player;
     float xSpeed;
 
-   
 
-
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -28,6 +28,7 @@ public class bullet : MonoBehaviour
     {
         if (collision.tag == "Enemies")
         {
+            
             Destroy(collision.gameObject);
             
         }

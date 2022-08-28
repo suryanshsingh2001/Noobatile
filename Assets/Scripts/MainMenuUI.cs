@@ -10,7 +10,6 @@ public class MainMenuUI : MonoBehaviour
 
     public void LoadGame()
     {
-
         SceneManager.LoadScene("Level 1");
         FindObjectOfType<ScoreKeeper>().ResetShowScore();
         FindObjectOfType<GameSession>().ResetGameSession();
@@ -22,6 +21,12 @@ public class MainMenuUI : MonoBehaviour
     public void LoadGameOver()
     {
         StartCoroutine(WaitandLoad("GameOver", delay));
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quitting");
     }
 
 
