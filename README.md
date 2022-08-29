@@ -22,8 +22,9 @@ WASD or arrow keys to move your player,Space to jump and left click button to sh
 ![Level 1](https://github.com/suryanshsingh2001/Noobatile/blob/main/Screenshots/Level%201.png)
 
 ### Level 2
-![Level 2-1]()
-![Level 2-2]()
-![Level 2-3]()
+![Level 2-1](https://github.com/suryanshsingh2001/Noobatile/blob/main/Screenshots/Level%202-1.png)
+![Level 2-2](https://github.com/suryanshsingh2001/Noobatile/blob/main/Screenshots/Level%202-2.png)
+![Level 2-3](https://github.com/suryanshsingh2001/Noobatile/blob/main/Screenshots/Level%202-3.png)
 
 ### Game Over Screen
+![GameOver](https://github.com/suryanshsingh2001/Noobatile/blob/main/Screenshots/GameOver.png)
