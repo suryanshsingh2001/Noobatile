@@ -16,7 +16,7 @@ WASD or arrow keys to move your player,Space to jump and left click button to sh
 ## Gameplay Overview
 
 ### Main Menu Screen
-![Main Menu]()
+![Main Menu](https://github.com/suryanshsingh2001/Noobatile/blob/main/Screenshots/MainMenu.png)
 
 ### Level 1
 ![Level 1]()
