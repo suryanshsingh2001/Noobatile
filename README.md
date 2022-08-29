@@ -13,4 +13,17 @@ You are a noob trying to win against your enemies(Purus) by stealing as many coi
 ## Controls
 WASD or arrow keys to move your player,Space to jump and left click button to shoot.
 
-## Gameplay
+## Gameplay Overview
+
+### Main Menu Screen
+![Main Menu]()
+
+### Level 1
+![Level 1]()
+
+### Level 2
+![Level 2-1]()
+![Level 2-2]()
+![Level 2-3]()
+
+### Game Over Screen
