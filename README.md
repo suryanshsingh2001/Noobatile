@@ -46,7 +46,7 @@ Noob-a-Tile is a 2D tilemap game submitted in the BYOG Game Jam 2022. In this ga
 If you encounter any issues while playing Noob-a-Tile or have any feedback or suggestions to improve the game, please reach out to the developer through the following channels:
 
 - Developer: Suryansh Singh
-- Email: [suryanshsingh@example.com](mailto:suryanshsingh@example.com)
+- Email: [ricochetthestoryteller2001@gmail.com]()
 - Website: [https://suryanshsingh2001.itch.io/noob-a-tile](https://suryanshsingh2001.itch.io/noob-a-tile)
 
 Your feedback is valuable and helps the developer in further enhancing the game for an improved gaming experience.
